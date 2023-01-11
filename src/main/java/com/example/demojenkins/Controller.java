@@ -8,6 +8,6 @@ public class Controller {
 
     @GetMapping("testing")
     public String testing(){
-        return "test";
+        return "testing trigger";
     }
 }
