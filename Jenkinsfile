@@ -19,7 +19,7 @@ pipeline {
 						sh """
 						ssh opc@168.138.214.199 rm -rf code
 						ssh opc@168.138.214.199 mkdir -p code
-						scp -r target/demo-0.0.1-SNAPSHOT.jar opc@168.138.214.199:code
+						scp -r target/demoJenkins-0.0.1-SNAPSHOT.jar opc@168.138.214.199:code
 						ssh opc@168.138.214.199 java -jar -server code/demo-0.0.1-SNAPSHOT.jar
  						"""
 					}
