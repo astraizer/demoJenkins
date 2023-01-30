@@ -23,8 +23,6 @@ pipeline {
 						"""
 					}*/
 					sh """
-						cd ../../
-						ls -la
 						ssh -i server.key opc@168.138.214.199 rm -rf code
 						ssh -i server.key opc@168.138.214.199 mkdir -p code
 						scp -r target/demoJenkins-0.0.1-SNAPSHOT.jar opc@168.138.214.199:code
